@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: tennis-coach-demo
+    runtime: node
+    plan: free
+    buildCommand: node --check server.mjs && node --check public/app.js
+    startCommand: node server.mjs --web-demo
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: TENNIS_HOST
+        value: "0.0.0.0"
+      - key: TENNIS_DEMO_PASSWORD
+        sync: false

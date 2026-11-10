@@ -1,0 +1,10 @@
+{
+  "name": "tennis-coach",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": { "start": "node server.mjs", "demo": "node server.mjs --demo" },
+  "dependencies": { "@capacitor/core": "^8.0.0", "@capacitor/android": "^8.0.0", "@capacitor/ios": "^8.0.0" },
+  "devDependencies": { "@capacitor/cli": "^8.0.0" }
+}
